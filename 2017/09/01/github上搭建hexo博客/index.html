@@ -1,302 +1,150 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="John Doe" />
-
-
-
-<meta name="description" content="搭建小记终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。 前几个月听孙大力同学说起 Markdown 这东西好酷好炫，我当时还没什么感觉，认为只是一个语法转换器，就像以前BBS发帖的UBB代码一样。这几天我才知道，原来 Markdown 在程序员的世界里已经风靡了好多年，就像 Github 的 Readme.md 就是这个语法，我 ….">
+  <meta charset="utf-8">
+  
+  <title>搭建 Github 博客小记 | Mallor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="mallor,mallor's Blog" />
+  
+  <meta name="description" content="搭建小记终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。 前几个月听孙大力同学说起 Markdown 这东西好酷好炫，我当时还没什么感觉，认为只是一个语法转换器，就像以前BBS发帖的UBB代码一样。这几天我才知道，原来 Markdown 在程序员的世界里已经风靡了好多年，就像 Github 的 Readme.md 就是这个语法，我 ….">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建 Github 博客小记">
 <meta property="og:url" content="http://yoursite.com/2017/09/01/github上搭建hexo博客/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Mallor">
 <meta property="og:description" content="搭建小记终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。 前几个月听孙大力同学说起 Markdown 这东西好酷好炫，我当时还没什么感觉，认为只是一个语法转换器，就像以前BBS发帖的UBB代码一样。这几天我才知道，原来 Markdown 在程序员的世界里已经风靡了好多年，就像 Github 的 Readme.md 就是这个语法，我 ….">
 <meta property="og:updated_time" content="2017-09-01T13:00:34.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建 Github 博客小记">
 <meta name="twitter:description" content="搭建小记终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。 前几个月听孙大力同学说起 Markdown 这东西好酷好炫，我当时还没什么感觉，认为只是一个语法转换器，就像以前BBS发帖的UBB代码一样。这几天我才知道，原来 Markdown 在程序员的世界里已经风靡了好多年，就像 Github 的 Readme.md 就是这个语法，我 ….">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>搭建 Github 博客小记 | Hexo</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-
-
+  
+  
 
 </head>
+
 <body>
   <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">John Doe</a></h1>
-        </hgroup>
-
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">mallor&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
                     
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
-                        
-                        <li>Friends</li>
-                        
-                        
-                        <li>About Me</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>首页</span>
+                    </a>
                     
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>文章</span>
+                    </a>
                     
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    <a  href="/">
+                        <i class="fa fa-user"></i>
+                        <span>About Me</span>
+                    </a>
                     
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
+                </nav>
             </div>
         </div>
-    </header>                
-</div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        mallor&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        留下技术上的脚印
+                    </h3>
+                    
+                </div>
+            </div>
             <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
             </nav>
-        </header>                
+        </div>
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
-</nav>
-      <div class="body-wrap"><article id="post-github上搭建hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/09/01/github上搭建hexo博客/" class="article-date">
-      <time datetime="2017-09-01T12:46:18.096Z" itemprop="datePublished">2017-09-01</time>
-</a>
-
-
-    </div>
-  
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-github上搭建hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="post-title" itemprop="name">
       搭建 Github 博客小记
     </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/心得/">心得</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2017-09-01
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/心得/">心得</a>
-    </div>
-
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
           
-        <h1 id="搭建小记"><a href="#搭建小记" class="headerlink" title="搭建小记"></a>搭建小记</h1><p>终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。</p>
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="搭建小记"><a href="#搭建小记" class="headerlink" title="搭建小记"></a>搭建小记</h1><p>终于是把 Github 博客搭建起来了，第一次用 Markdown 写文章，记录一下过程，也不枉白折腾这几天。</p>
 <p>前几个月听孙大力同学说起 Markdown 这东西好酷好炫，我当时还没什么感觉，认为只是一个语法转换器，就像以前BBS发帖的UBB代码一样。这几天我才知道，原来 Markdown 在程序员的世界里已经风靡了好多年，就像 Github 的 Readme.md 就是这个语法，我 ….. 我竟然不知道，我实在太落伍了，赶紧动手看看吧。</p>
 <h2 id="准备编辑器"><a href="#准备编辑器" class="headerlink" title="准备编辑器"></a>准备编辑器</h2><h3 id="1-Sublime-安装-Markdown-编辑插件"><a href="#1-Sublime-安装-Markdown-编辑插件" class="headerlink" title="1. Sublime 安装 Markdown 编辑插件"></a>1. Sublime 安装 <strong>Markdown</strong> 编辑插件</h3><p>我用的是一款叫 MarkdownEditing 的插件，它可以让你在 Sublime 里写 Md 格式文件时有部分的所见所得的功能，前提是先要保存为 md 后缀的文件。</p>
 <p>另外一个插件叫 MarkdownPreview，可以直接把 md 转换为 html 格式。</p>
@@ -342,208 +190,142 @@
 <li>重新 git clone 一份代码，勾上 Auto load putty key </li>
 </ol>
 
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2017年09月01日 21:00</p>
+        <p>原始链接： <a class="post-url" href="/2017/09/01/github上搭建hexo博客/" title="搭建 Github 博客小记">http://yoursite.com/2017/09/01/github上搭建hexo博客/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Mallor#163.com">
+                Mallor#163.com
+            </a>
+        </footer>
+    </div>
+</div>
+
       
     </div>
-    
+    <footer class="article-footer">
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
   </div>
-  
-    
-    <div class="copyright">
-        <p><span>Title:</span><a href="/2017/09/01/github上搭建hexo博客/">搭建 Github 博客小记</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">John Doe</a></p>
-        <p><span>Created:</span>2017-09-01, 20:46:18</p>
-        <p><span>Updated:</span>2017-09-01, 21:00:34</p>
-        <p>
-            <span>Full URL:</span><a class="post-url" href="/2017/09/01/github上搭建hexo博客/" title="搭建 Github 博客小记">http://yoursite.com/2017/09/01/github上搭建hexo博客/</a>
-            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/09/01/github上搭建hexo博客/　　By John Doe" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
-        </p>
-    </div>
-
-
-
-    <nav id="article-nav">
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/09/01/hello-world/">
-                    Hello World
-                </a>
-            </div>
-        
-    </nav>
-
-  
 </article>
 
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建小记"><span class="toc-number">1.</span> <span class="toc-text">搭建小记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备编辑器"><span class="toc-number">1.1.</span> <span class="toc-text">准备编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Sublime-安装-Markdown-编辑插件"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. Sublime 安装 Markdown 编辑插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-学习-Markdown-的语法"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 学习 Markdown 的语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-学习-Jeklly-的语法"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 学习 Jeklly 的语法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建环境"><span class="toc-number">1.2.</span> <span class="toc-text">构建环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-第1种机制，让-silverd-github-io-为博客地址"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 第1种机制，让 silverd.github.io 为博客地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-第2种机制，让-silverd-github-io-blog-为博客地址"><span class="toc-number">1.2.2.</span> <span class="toc-text">1. 第2种机制，让 silverd.github.io/blog 为博客地址</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题风格"><span class="toc-number">1.3.</span> <span class="toc-text">主题风格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#评论系统"><span class="toc-number">1.4.</span> <span class="toc-text">评论系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#独立域名绑定"><span class="toc-number">1.5.</span> <span class="toc-text">独立域名绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#如果是顶级域名"><span class="toc-number">1.5.1.</span> <span class="toc-text">如果是顶级域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如果是二级域名"><span class="toc-number">1.5.2.</span> <span class="toc-text">如果是二级域名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TortoiseGit-的使用"><span class="toc-number">1.6.</span> <span class="toc-text">TortoiseGit 的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#提交免输入密码的办法"><span class="toc-number">1.6.1.</span> <span class="toc-text">提交免输入密码的办法</span></a></li></ol></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
 
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
-
-    <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"搭建 Github 博客小记　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
-
-
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#搭建小记"><span class="post-toc-text">搭建小记</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备编辑器"><span class="post-toc-text">准备编辑器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Sublime-安装-Markdown-编辑插件"><span class="post-toc-text">1. Sublime 安装 Markdown 编辑插件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-学习-Markdown-的语法"><span class="post-toc-text">2. 学习 Markdown 的语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-学习-Jeklly-的语法"><span class="post-toc-text">3. 学习 Jeklly 的语法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#构建环境"><span class="post-toc-text">构建环境</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-第1种机制，让-silverd-github-io-为博客地址"><span class="post-toc-text">1. 第1种机制，让 silverd.github.io 为博客地址</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-第2种机制，让-silverd-github-io-blog-为博客地址"><span class="post-toc-text">1. 第2种机制，让 silverd.github.io/blog 为博客地址</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题风格"><span class="post-toc-text">主题风格</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#评论系统"><span class="post-toc-text">评论系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#独立域名绑定"><span class="post-toc-text">独立域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如果是顶级域名"><span class="post-toc-text">如果是顶级域名</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如果是二级域名"><span class="post-toc-text">如果是二级域名</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#TortoiseGit-的使用"><span class="post-toc-text">TortoiseGit 的使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#提交免输入密码的办法"><span class="post-toc-text">提交免输入密码的办法</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
     
 
 
 
-
-    <div class="scroll" id="post-nav-button">
+    
+</section>
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
-        
-
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2017/09/01/hello-world/" title="Next: Hello World">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/01/github上搭建hexo博客/">搭建 Github 博客小记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/01/hello-world/">Hello World</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
-</div>
+      </div>
       <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016-2017 John Doe
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2017 Mallor#163.com<br>
+      </p>
     </div>
+  </div>
 </footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
-</div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false
+  }
 </script>
+<div class="sidebar">
+    <div id="sidebar-search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/心得/">心得</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
   </div>
 </body>
 </html>
